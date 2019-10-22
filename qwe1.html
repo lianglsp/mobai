@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+        }
+
+        /* 第一段宽高 */
+        .article {
+            width: 100%;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        .swiper-container img {
+            width: 100%;
+            float: left;
+        }
+
+        /* 第二段宽高 */
+        .article2 {
+            width: 100%;
+            height: 50%;
+        }
+
+        .article2 .swiper-wrapper1 {
+            width: 100%;
+            /* 溢出隐藏，清除浮动， */
+            overflow: hidden;
+
+        }
+
+        .swiper-slide {
+            width: 25%;
+            height: 350px;
+            float: left;
+            /* 控制背景坐标点 居中 */
+            background-position: center;
+            /* 背景充满 */
+            background-size: cover;
+            /* 怪异盒子模型 */
+            box-sizing: border-box;
+            /* 边框线为一  实线  白色  复合属性*/
+            border: 2px solid white
+        }
+        .meta-links{width: 100%;}
+        .meta-link{flex:1;}
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="article">
+        <!-- 第一段<div> -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-4.jpg" alt="">
+                </div>
+
+            </div>
+            <!-- 如果需要分页器
+            <div class="swiper-pagination"></div>
+
+            如果需要导航按钮
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            如果需要滚动条
+            <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //   direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+            //   自动播放  true默认三秒
+            autoplay: true,
+
+            //   // 如果需要分页器
+            //   pagination: {
+            //     el: '.swiper-pagination',
+            //   },
+
+            //   // 如果需要前进后退按钮
+            //   navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            //   },
+
+            //   // 如果需要滚动条
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+        })
+
+    </script>
+    <!-- 第二段内容 -->
+    <div class="article2">
+        <div class="swiper-wrapper1">
+            <!-- style="background-image:url插入背景图 -->
+            <div class="swiper-slide"
+                style="background-image:url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg)">
+
+            </div>
+            <div class="swiper-slide"
+                style="background-image:url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg)">
+
+            </div>
+            <div class="swiper-slide"
+                style="background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);">
+
+            </div>
+            <div class="swiper-slide"
+                style="background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);">
+
+            </div>
+        </div>
+    </div>
+    <!-- 第三段 -->
+    <div class="meta-links">
+        <div class="meta-link">
+             <div class="icon"></div>
+             <div class="txt"></div>  
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
